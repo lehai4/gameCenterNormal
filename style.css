@@ -1,6 +1,9 @@
 body {
   background-color: tan;
 }
+.container {
+  overflow: hidden;
+}
 .wrapper-title {
   margin: 0 auto;
   box-sizing: border-box;
