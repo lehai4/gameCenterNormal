@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--[if lt IE 9]>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--[if lt IE 9]>
       <script
         src="https://cdnjs.cloudflare.com/ajax/libs/js-polyfills/0.1.43/polyfill.min.js"
         integrity="sha512-lvWiOP+aMKHllm4THsjzNleVuGOh0WGniJ3lgu/nvCbex1LlaQSxySUjAu/LTJw9FhnSL/PVYoQcckg1Q03+fQ=="
@@ -12,40 +13,37 @@
         referrerpolicy="no-referrer"
       ></script>
     <![endif]-->
-    <title>Game đoán chữ</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./grid.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="grid wide">
-        <div class="row">
-          <div class="wraper col l-12 l-o-4 m-12 m-o-2 c-12">
-            <div class="wrapper-title">
-              <span>Cùng nhau chơi game đoán số nào!!!</span>
-            </div>
-            <div class="people-play">
-              <ul>
-                <li>
-                  Người chơi 1
-                  <button class="btn btn-play1">Chơi</button>
-                  <div class="field-test">
-                    <input type="text" class="field1" />
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="play-pro">
-              <h2>
-                Số của chúng tôi là:
-                <span class="number" style="display: inline-block"></span>
-              </h2>
-              <button class="btn-cicle" onclick="getRamdom()">Quay số</button>
-            </div>
+  <title>Game đoán chữ</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <h2 class="wrapper-title">
+        <span>Cùng nhau chơi game đoán số nào!!!</span>
+      </h2>
+      <div class="people-play">
+        <div class="people-play--one">
+          <h2>Người chơi số 1</h2>
+          <button class="btn btn-play">Chơi</button>
+          <div class="field-test">
+            <input type="text" placeholder="Nhập số của bạn..." />
           </div>
         </div>
       </div>
+      <div class="play-pro">
+        <h2>
+          Số của chúng tôi là:
+          <span class="number" style="display: inline-block"></span>
+        </h2>
+        <button class="btn-cicle" onclick="getRamdom()">Quay số</button>
+      </div>
     </div>
-    <script src="./main.js"></script>
-  </body>
+  </div>
+  </div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+
 </html>
