@@ -6,6 +6,21 @@
 body {
   background-color: tan;
 }
+ul,
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+ul > li {
+  padding: 10px;
+}
+input {
+  outline: none;
+  padding: 6px 8px;
+}
+button {
+  padding: 6px 8px;
+}
 .container {
   max-width: 1600px;
   margin: 0 auto;
@@ -26,26 +41,21 @@ body {
   background-color: red;
   color: white;
 }
+
+@media screen and (max-width: 768px) {
+  .wrapper-title {
+    text-align: center;
+  }
+}
 .people-play {
   margin: 15px;
   padding: 5px;
 }
 
-ul,
-li {
-  text-decoration: none;
-  list-style-type: none;
+.people-play h2 {
+  margin: 5px 0;
 }
-ul > li {
-  padding: 10px;
-}
-input {
-  outline: none;
-  padding: 6px 8px;
-}
-button {
-  padding: 6px 8px;
-}
+
 .field-test {
   display: inline-block;
 }
